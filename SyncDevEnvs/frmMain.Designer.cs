@@ -28,6 +28,7 @@
             this.components = new System.ComponentModel.Container();
             this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
             this.btnOverlordGo = new System.Windows.Forms.Button();
+            this.btnMinion = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // notifyIcon1
@@ -37,7 +38,7 @@
             // 
             // btnOverlordGo
             // 
-            this.btnOverlordGo.Location = new System.Drawing.Point(148, 140);
+            this.btnOverlordGo.Location = new System.Drawing.Point(48, 107);
             this.btnOverlordGo.Name = "btnOverlordGo";
             this.btnOverlordGo.Size = new System.Drawing.Size(108, 23);
             this.btnOverlordGo.TabIndex = 0;
@@ -45,11 +46,22 @@
             this.btnOverlordGo.UseVisualStyleBackColor = true;
             this.btnOverlordGo.Click += new System.EventHandler(this.btnOverlordGo_Click);
             // 
+            // btnMinion
+            // 
+            this.btnMinion.Location = new System.Drawing.Point(48, 173);
+            this.btnMinion.Name = "btnMinion";
+            this.btnMinion.Size = new System.Drawing.Size(108, 23);
+            this.btnMinion.TabIndex = 1;
+            this.btnMinion.Text = "Minion GO";
+            this.btnMinion.UseVisualStyleBackColor = true;
+            this.btnMinion.Click += new System.EventHandler(this.btnMinion_Click);
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(422, 273);
+            this.Controls.Add(this.btnMinion);
             this.Controls.Add(this.btnOverlordGo);
             this.Name = "frmMain";
             this.Text = "Sync Dev Envs - Main";
@@ -61,6 +73,7 @@
 
         private System.Windows.Forms.NotifyIcon notifyIcon1;
         private System.Windows.Forms.Button btnOverlordGo;
+        private System.Windows.Forms.Button btnMinion;
     }
 }
 

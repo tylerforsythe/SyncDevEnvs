@@ -1,4 +1,6 @@
-﻿namespace SyncDevEnvs.AppCode
+﻿using System;
+
+namespace SyncDevEnvs.AppCode
 {
     public class OverlordCtrl
     {
@@ -10,7 +12,7 @@
 
             // delete original bak file
 
-            CliExecute.ExecuteScript(@"OverlordCommands.bat", "");
+            CliExecute.ExecuteScript($"OverlordCommands.{Environment.MachineName.ToUpper()}.bat", "");
         }
     }
 }

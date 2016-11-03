@@ -7,7 +7,7 @@ namespace SyncDevEnvs.AppCode
     public static class CliExecute
     {
         public static void ExecuteScript(string scriptName, string fileTimestamp) {
-            string targetDir = Path.Combine(Environment.CurrentDirectory, @"\CommandScripts\");
+            string targetDir = Path.Combine(Environment.CurrentDirectory, @"CommandScripts");
 
             var tmpOutFileName = scriptName.Replace(".bat", "_currently-executing.bat");
             var tmpOutFileFull = Path.Combine(targetDir, tmpOutFileName);

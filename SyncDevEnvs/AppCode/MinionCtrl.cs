@@ -24,7 +24,7 @@ namespace SyncDevEnvs.AppCode
             var contents = File.ReadAllText(statusFilePath);
             var fileTimeStamp = contents.Replace("COMPLETE ", "");
 
-            CliExecute.ExecuteScript(@"MinionCommands.bat", fileTimeStamp);
+            CliExecute.ExecuteScript($"MinionCommands.{Environment.MachineName.ToUpper()}.bat", fileTimeStamp);
         }
     }
 }

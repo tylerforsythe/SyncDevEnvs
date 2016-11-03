@@ -15,11 +15,19 @@ namespace SyncDevEnvs
     {
         public frmMain() {
             InitializeComponent();
+
+            // Test to ensure all our config values read
+            ConfigSettings.ReadConfig();
         }
 
         private void btnOverlordGo_Click(object sender, EventArgs e) {
             var overlord = new OverlordCtrl();
             overlord.PerformTasks();
+        }
+
+        private void btnMinion_Click(object sender, EventArgs e) {
+            var minion = new MinionCtrl();
+            minion.PerformTasks();
         }
     }
 }

@@ -70,10 +70,16 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <None Include="CommandScripts\MinionCommands.bat">
+    <None Include="CommandScripts\MinionCommands.BLACKBELT.bat">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="CommandScripts\OverlordCommands.bat">
+    <None Include="CommandScripts\MinionCommands.GTX.bat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="CommandScripts\OverlordCommands.BLACKBELT.bat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="CommandScripts\OverlordCommands.GTX.bat">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="Properties\Settings.settings">
