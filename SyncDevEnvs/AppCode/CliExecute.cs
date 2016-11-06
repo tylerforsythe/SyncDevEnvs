@@ -20,6 +20,8 @@ namespace SyncDevEnvs.AppCode
                 allText = allText.Replace("{FILE_TIMESTAMP}", fileTimestamp);
             allText = allText.Replace("{DATE}", dateStamp);
             allText = allText.Replace("{DATETIME}", dateTimeStamp);
+            allText = allText.Replace("{SYNC_DIR_PATH}", ConfigSettings.GetSyncDirectoryPath());
+            allText = allText.Replace("{TEMP_DIR_PATH}", ConfigSettings.GetTempDirectoryPath());
             File.WriteAllText(tmpOutFileFull, allText);
 
             var proc = new Process();

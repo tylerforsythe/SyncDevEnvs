@@ -35,7 +35,7 @@ namespace SyncDevEnvs.AppCode
         }
 
         private static string GetRawAppSetting(string keyName) {
-            return ConfigurationSettings.AppSettings[GetAppSettingKeyFor(keyName)];
+            return ConfigurationManager.AppSettings[GetAppSettingKeyFor(keyName)];
         }
         private static string GetAppSettingKeyFor(string statusFileDirectoryPath) {
             return $"{Environment.MachineName.ToUpper()}.{statusFileDirectoryPath}";
