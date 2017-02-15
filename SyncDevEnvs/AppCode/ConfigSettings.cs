@@ -12,6 +12,7 @@ namespace SyncDevEnvs.AppCode
     {
         public static void ReadConfig() {
             GetSyncDirectoryPath();
+            GetTempDirectoryPath();
             IsOverlord();
             IsMinion();
         }
